@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     # required for DRF
     'rest_framework',
     'rest_framework.authtoken',
+    # required for dj-rest-auth
     'dj_rest_auth',
     # required for allauth
     'allauth',
