@@ -133,18 +133,20 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# Required for allauth
-AUTHENTICATION_BACKENDS = [
-   # Needed to login by username in Django admin, regardless of `allauth`
-   'django.contrib.auth.backends.ModelBackend',
-
-   # `allauth` specific authentication methods, such as login by e-mail
-   'allauth.account.auth_backends.AuthenticationBackend'
-]
-
+# required for admin panel to stay active after allauth
 SITE_ID = 1
 
 # required for CORS
 CORS_ORIGIN_WHITELIST = [
    'http://localhost:4200'
 ]
+
+# required for JWT
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'dj_rest_auth.jwt_auth.JWTCookieAuthentication',
+    )
+}
+# Http-Only cookies
+REST_USE_JWT = True
+JWT_AUTH_COOKIE = 'jwt-auth'

@@ -17,8 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from allauth.socialaccount.providers.google.views import GoogleOAuth2Adapter
 from dj_rest_auth.registration.views import SocialLoginView
-from rest_framework.decorators import api_view, authentication_classes, permission_classes
-from rest_framework.authentication import TokenAuthentication
+from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
@@ -28,26 +27,15 @@ class GoogleLogin(SocialLoginView):
 
 
 @api_view(['GET'])
-@authentication_classes([TokenAuthentication])
 @permission_classes([IsAuthenticated])
 def get_secret(request):
-    print(request.user.auth_token)
-    return Response({"name": "secret 1", "value": "secret value"})
-
-
-@api_view(['POST'])
-@authentication_classes([TokenAuthentication])
-@permission_classes([IsAuthenticated])
-def logout(request):
-    message = f'{request.user} has successfully logged out.'
-    request.user.auth_token.delete()
-    print("Token deleted\n", message)
-    return Response(message)
+    print(request.user)
+    return Response({"name": "Secret Key", "value": "lfhhr&te7h^ig%leafixkb1"})
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('auth/', include('dj_rest_auth.urls')),
     path('auth/google/', GoogleLogin.as_view(), name='google_login'),
-    path('auth/logout/', logout, name='logout'),
     path('secret/', get_secret, name='get_secret')
 ]
