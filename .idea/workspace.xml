@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abf79b70-3b55-49fd-aa42-6b5d7c25f0fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Angular_Django_JWT_Backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Angular_Django_JWT_Backend/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular_Django_JWT_Backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Angular_Django_JWT_Backend/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Angular_Django_JWT_Backend/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="150" column="28" selection-start-line="150" selection-start-column="28" selection-end-line="150" selection-end-column="28" />
+            <state relative-caret-position="189">
+              <caret line="152" column="28" lean-forward="true" selection-start-line="136" selection-end-line="152" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -60,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Angular_Django_JWT_Backend/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+            <state relative-caret-position="213">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="e#650#682#0" expanded="true" />
               </folding>
@@ -85,8 +84,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Angular_Django_JWT_Backend/models.py" />
-        <option value="$PROJECT_DIR$/Angular_Django_JWT_Backend/settings.py" />
         <option value="$PROJECT_DIR$/Angular_Django_JWT_Backend/urls.py" />
+        <option value="$PROJECT_DIR$/Angular_Django_JWT_Backend/settings.py" />
       </list>
     </option>
   </component>
@@ -186,16 +185,15 @@
       <option name="presentableId" value="Default" />
       <updated>1610869181747</updated>
       <workItem from="1610869260801" duration="15455000" />
-      <workItem from="1610952562635" duration="6286000" />
+      <workItem from="1610952562635" duration="8819000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21741000" />
+    <option name="totallyTimeSpent" value="24274000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="828" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25383994" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -275,13 +273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Angular_Django_JWT_Backend/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="150" column="28" selection-start-line="150" selection-start-column="28" selection-end-line="150" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://bfb3e2ac-2a62-4d4c-bc57-a2d013b8863e/schema/main/table/authtoken_token">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="ddd378b2-45ac-4896-81c5-33860219d851">
@@ -291,10 +282,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://bfb3e2ac-2a62-4d4c-bc57-a2d013b8863e/schema/main/table/socialaccount_socialtoken">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="ddd378b2-45ac-4896-81c5-33860219d851">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Angular_Django_JWT_Backend/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="152" column="28" lean-forward="true" selection-start-line="136" selection-end-line="152" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Angular_Django_JWT_Backend/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        <state relative-caret-position="213">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#650#682#0" expanded="true" />
           </folding>

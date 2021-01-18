@@ -42,7 +42,6 @@ INSTALLED_APPS = [
 
     # required for DRF
     'rest_framework',
-    'rest_framework.authtoken',
     # required for dj-rest-auth
     'dj_rest_auth',
     # required for allauth
@@ -50,6 +49,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
+    # required for blacklisting JWT tokens
+    'rest_framework_simplejwt.token_blacklist',
     # required for CORS
     'corsheaders',
 ]
